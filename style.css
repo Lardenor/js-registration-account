@@ -1,0 +1,98 @@
+#registrationForm,#loginForm
+ {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#registrationForm{
+    display: none;
+}
+.form-group {
+    margin-bottom: 10px;
+
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+
+}
+
+#firstName,
+#lastName,
+#date,
+#email,
+#password,
+#confirm_password,
+#loginPassword,
+#loginEmail {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+
+}
+
+#submit_btn,#login_btn, #register_btn,#toLogin,#clear-storage,#logout {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit_btn:active,
+#login_btn:active,
+#register_btn:active,
+#toLogin:active {
+    transform: scale(90%);
+}
+#clear-storage{
+    background-color: red;
+}
+.error {
+    display: block;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+.registration-button{
+    display: flex;
+    gap: 10px;
+}
+.container {
+    display: none;
+}
+
+.user {
+    padding: 0;
+    list-style-type: none;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+li{
+  display: flex; 
+  margin: 10px 0;
+}
+.span{
+    display: block;
+   width: 300px;
+  
+}
+.user_name {}
+
+.user_lastname {}
+
+.user_date {}
+
+.user_email {}

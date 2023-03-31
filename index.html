@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form id="registrationForm">
+        <div class="form-group">
+            <label for="firstName">Ім'я:</label>
+            <input type="text" id="firstName" name="firstName">
+            <p id="firstNameError" class="error hidden"></p>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Прізвище:</label>
+            <input type="text" id="lastName" name="lastName">
+            <p id="lastNameError" class="error hidden"></p>
+        </div>
+        <div class="form-group">
+            <label for="date">Дата народження:</label>
+            <input type="date" id="date" name="date" max="">
+
+            <p id="dateError" class="error hidden"></p>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <p id="emailError" class="error hidden"></p>
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+            <p id="passwordError" class="error hidden"></p>
+        </div>
+        <div class="form-group">
+            <label for="confirm_password">Підтвердження пароля:</label>
+            <input type="password" id="confirm_password" name="confirm_password">
+            <p id="confirmPasswordError" class="error hidden"></p>
+        </div>
+        <button id="submit_btn" type="submit">Зареєструватися</button>
+        <button id="toLogin" type="button">Вхід</button>
+
+    </form>
+    <form id="loginForm">
+     
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="loginEmail" name="email">
+            <p id="emailError" class="error hidden"></p>
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" id="loginPassword" name="password">
+            <p id="passwordError" class="error hidden"></p>
+        </div>
+    <div class="registration-button">
+        <button id="login_btn" type="submit">Вхід</button>
+        <button id="register_btn" type="button">Зареєструватися</button>
+        </div>
+    </form>
+<div class="container">
+    <ul class="user">
+        <li class="user_name"></li>
+        <li class="user_lastname"></li>
+        <li class="user_date"></li>
+        <li class="user_email"></li>
+<button id="clear-storage">Видалити аккаунт</button>
+<button id="logout">Вийти з аккаунту</button>
+    </ul>
+</div>
+    <script src="./script.js">
+
+    </script>
+    <script> let today = new Date().toISOString().split('T')[0];
+        document.getElementById("date").setAttribute("max", today);</script>
+</body>
+
+</html>
